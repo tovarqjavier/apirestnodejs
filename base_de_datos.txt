@@ -1,0 +1,24 @@
+//Instrucciones para crear la base de datos "articulosdb" y la tabla "articulos" en SQL con phpMyAdmin.
+
+CREATE DATABASE articulosdb;
+
+use articulosdb;
+
+CREATE TABLE articulos
+(
+id int primary key not null auto_increment,
+descripcion varchar (100), 
+precio decimal (10,2),
+stock int
+);
+
+//Instrucciones para ingresar registros de ejemplo en la tabla "articulos" de la base de datos "articulosdb".
+
+INSERT INTO `articulos` (`id`, `descripcion`, `precio`, `stock`) VALUES
+(1, 'Harina - 3 KG', 150.00, 50),
+(2, 'Fanta', 86.00, 10),
+(3, 'Vino', 252.00, 42),
+(4, 'Azucar', 450.00, 20),
+(5, 'Leche', 89.00, 36),
+(6, 'Dulce', 99.00, 50),
+(7, 'Queso', 250.00, 60);
